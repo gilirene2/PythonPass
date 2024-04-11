@@ -53,7 +53,14 @@ cd password-manager
 4 Install the required dependencies (see Dependencies).
 
 ## 🔧 Dependencies
-The project utilizes standard Python libraries and does not require any external dependencies.
+This project relies on the following Python library:
+
+cryptography: Used for encryption and decryption operations.
+You can install the dependencies using pip:
+
+```bash
+pip install cryptography
+```
 
 ## 📝 Notes
 Encryption: The password manager leverages the Fernet symmetric encryption algorithm from the cryptography library. Fernet ensures secure encryption and decryption of sensitive data. It uses a symmetric key, meaning the same key is used for both encryption and decryption. This approach provides a balance between security and ease of use, as only those with access to the key can decrypt the data.
